@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { passive: false }
   );
 
-  container.addEventListener("touchStart", (e) => {
+  container.addEventListener("touchstart", (e) => {
     isDown = true;
     lastTouchX = e.touches[0].clientX;
     lastTouchTime = Date.now();
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     lastTouchX = currentTouchX;
-    lastTouchTime - currentTime;
+    lastTouchTime = currentTime;
 
     const needsReset = checkBoundryAndReset(seqenceWidth);
     if (!isAnimating) {
