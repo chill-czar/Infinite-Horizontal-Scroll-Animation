@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     lastTouchX = currentTouchX;
-    lastTouchTime = currentTime;
+    lastTouchTime =  currentTime;
 
     const needsReset = checkBoundryAndReset(seqenceWidth);
     if (!isAnimating) {
